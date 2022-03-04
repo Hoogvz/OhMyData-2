@@ -1,0 +1,1479 @@
+{
+	"info": {
+		"_postman_id": "c3b4d98a-6a17-4a7f-a6db-7d2d9ef7d035",
+		"name": "OhMyData Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Test",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "firware-service",
+								"value": "smartcity",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:1026/version",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1026",
+							"path": [
+								"version"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Entidades",
+			"item": [
+				{
+					"name": "Creacion_Sensor_Calidad_Aire",
+					"item": [
+						{
+							"name": "Aire_01",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "fiware-service",
+										"value": "smartcity",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n      \"id\":\"calidad01\", \"type\":\"Calidad_Aire\",\n      \"NO2\":{\"type\":\"Float\", \"value\":\"1.0\"},\n      \"SO3\":{\"type\":\"Float\",\"value\":\"3.0\"},\n      \"CO\":{\"type\":\"Float\",\"value\":\"2.7\"},\n      \"O3\":{\"type\":\"Float\",\"value\":\"5.8\"},\n      \"H2S\":{\"type\":\"Float\",\"value\":\"6.7\"},\n      \"DB\":{\"type\":\"Float\",\"value\":\"8.7\"}\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:1026/v2/entities",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "1026",
+									"path": [
+										"v2",
+										"entities"
+									],
+									"query": [
+										{
+											"key": "fiware-service",
+											"value": "Open_Entidades",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Aire_02",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "fiware-service",
+										"value": "smartcity",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n      \"id\":\"calidad02\", \"type\":\"Calidad_Aire\",\n      \"NO2\":{\"type\":\"Float\", \"value\":\"3.0\"},\n      \"SO3\":{\"type\":\"Float\",\"value\":\"2.7\"},\n      \"CO\":{\"type\":\"Float\",\"value\":\"6.7\"},\n      \"O3\":{\"type\":\"Float\",\"value\":\"3.0\"},\n      \"H2S\":{\"type\":\"Float\",\"value\":\"6.7\"},\n      \"DB\":{\"type\":\"Float\",\"value\":\"2.7\"}\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:1026/v2/entities",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "1026",
+									"path": [
+										"v2",
+										"entities"
+									],
+									"query": [
+										{
+											"key": "fiware-service",
+											"value": "Open_Entidades",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Aire_03",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "fiware-service",
+										"value": "smartcity",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n      \"id\":\"calidad03\", \"type\":\"Calidad_Aire\",\n      \"NO2\":{\"type\":\"Float\", \"value\":\"8.7\"},\n      \"SO3\":{\"type\":\"Float\",\"value\":\"0.0\"},\n      \"CO\":{\"type\":\"Float\",\"value\":\"6.7\"},\n      \"O3\":{\"type\":\"Float\",\"value\":\"2.7\"},\n      \"H2S\":{\"type\":\"Float\",\"value\":\"0.0\"},\n      \"DB\":{\"type\":\"Float\",\"value\":\"2.7\"}\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:1026/v2/entities",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "1026",
+									"path": [
+										"v2",
+										"entities"
+									],
+									"query": [
+										{
+											"key": "fiware-service",
+											"value": "Open_Entidades",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Aire_04",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "fiware-service",
+										"value": "smartcity",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n      \"id\":\"calidad04\", \"type\":\"Calidad_Aire\",\n      \"NO2\":{\"type\":\"Float\", \"value\":\"2.7\"},\n      \"SO3\":{\"type\":\"Float\",\"value\":\"3.0\"},\n      \"CO\":{\"type\":\"Float\",\"value\":\"8.7\"},\n      \"O3\":{\"type\":\"Float\",\"value\":\"6.7\"},\n      \"H2S\":{\"type\":\"Float\",\"value\":\"0.5\"},\n      \"DB\":{\"type\":\"Float\",\"value\":\"6.7\"}\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:1026/v2/entities",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "1026",
+									"path": [
+										"v2",
+										"entities"
+									],
+									"query": [
+										{
+											"key": "fiware-service",
+											"value": "Open_Entidades",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Aire_05",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "fiware-service",
+										"value": "smartcity",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n      \"id\":\"calidad05\", \"type\":\"Calidad_Aire\",\n      \"NO2\":{\"type\":\"Float\", \"value\":\"8.7\"},\n      \"SO3\":{\"type\":\"Float\",\"value\":\"0\"},\n      \"CO\":{\"type\":\"Float\",\"value\":\"2.7\"},\n      \"O3\":{\"type\":\"Float\",\"value\":\"3.0\"},\n      \"H2S\":{\"type\":\"Float\",\"value\":\"8.7\"},\n      \"DB\":{\"type\":\"Float\",\"value\":\"0\"}\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:1026/v2/entities",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "1026",
+									"path": [
+										"v2",
+										"entities"
+									],
+									"query": [
+										{
+											"key": "fiware-service",
+											"value": "Open_Entidades",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Creacion_Sensor_Residuos",
+					"item": [
+						{
+							"name": "Resiudos_01",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "fiware-service",
+										"value": "smartcity",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n      \"id\":\"residuos01\", \"type\":\"Residuos\",\n      \"llenado\":{\"type\":\"Float\", \"value\":\"8.7\"},\n      \"bateria\":{\"type\":\"Float\",\"value\":\"30.0\"},\n      \"temperatura\":{\"type\":\"Float\",\"value\":\"9.5\"},\n      \"zona\":{\"type\":\"Text\",\"value\":\"Paris\"}\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:1026/v2/entities",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "1026",
+									"path": [
+										"v2",
+										"entities"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Resiudos_02",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "fiware-service",
+										"value": "smartcity",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n      \"id\":\"residuos02\", \"type\":\"Residuos\",\n      \"llenado\":{\"type\":\"Float\", \"value\":\"0.0\"},\n      \"bateria\":{\"type\":\"Float\",\"value\":\"10\"},\n      \"temperatura\":{\"type\":\"Float\",\"value\":\"8.7\"},\n      \"zona\":{\"type\":\"Text\",\"value\":\"Marseille\"}\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:1026/v2/entities",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "1026",
+									"path": [
+										"v2",
+										"entities"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Resiudos_03",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "fiware-service",
+										"value": "smartcity",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n      \"id\":\"residuos03\", \"type\":\"Residuos\",\n      \"llenado\":{\"type\":\"Float\", \"value\":\"2.7\"},\n      \"bateria\":{\"type\":\"Float\",\"value\":\"90.0\"},\n      \"temperatura\":{\"type\":\"Float\",\"value\":\"2.7\"},\n      \"zona\":{\"type\":\"Text\",\"value\":\"Lille\"}\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:1026/v2/entities",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "1026",
+									"path": [
+										"v2",
+										"entities"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Resiudos_04",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "fiware-service",
+										"value": "smartcity",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n      \"id\":\"residuos04\", \"type\":\"Residuos\",\n      \"llenado\":{\"type\":\"Float\", \"value\":\"8.7\"},\n      \"bateria\":{\"type\":\"Float\",\"value\":\"0\"},\n      \"temperatura\":{\"type\":\"Float\",\"value\":\"2.7\"},\n      \"zona\":{\"type\":\"Text\",\"value\":\"Lyon\"}\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:1026/v2/entities",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "1026",
+									"path": [
+										"v2",
+										"entities"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Resiudos_05",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "fiware-service",
+										"value": "smartcity",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n      \"id\":\"residuos05\", \"type\":\"Residuos\",\n      \"llenado\":{\"type\":\"Float\", \"value\":\"8.0\"},\n      \"bateria\":{\"type\":\"Float\",\"value\":\"3.0\"},\n      \"temperatura\":{\"type\":\"Float\",\"value\":\"25\"},\n      \"zona\":{\"type\":\"Text\",\"value\":\"Montpellier\"}\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:1026/v2/entities",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "1026",
+									"path": [
+										"v2",
+										"entities"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Operacion_Entidades",
+			"item": [
+				{
+					"name": "Get_entidades",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "firware-service",
+								"value": "smartcity",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:1026/v2/entities/calidad01",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1026",
+							"path": [
+								"v2",
+								"entities",
+								"calidad01"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get_TypeEntidad",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "firware-service",
+								"value": "smartcity",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:1026/v2/entities/?options=keyValues",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1026",
+							"path": [
+								"v2",
+								"entities",
+								""
+							],
+							"query": [
+								{
+									"key": "options",
+									"value": "keyValues"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request Calidad01",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "fiware-service",
+								"value": "smartcity",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:1026/v2/entities/calidad01?option=keyvalues",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1026",
+							"path": [
+								"v2",
+								"entities",
+								"calidad01"
+							],
+							"query": [
+								{
+									"key": "option",
+									"value": "keyvalues"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request Calidad02",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "fiware-service",
+								"value": "smartcity",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:1026/v2/entities/calidad02?option=keyvalues",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1026",
+							"path": [
+								"v2",
+								"entities",
+								"calidad02"
+							],
+							"query": [
+								{
+									"key": "option",
+									"value": "keyvalues"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request Calidad03",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "fiware-service",
+								"value": "smartcity",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:1026/v2/entities/calidad03?option=keyvalues",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1026",
+							"path": [
+								"v2",
+								"entities",
+								"calidad03"
+							],
+							"query": [
+								{
+									"key": "option",
+									"value": "keyvalues"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request Calidad04",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "fiware-service",
+								"value": "smartcity",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:1026/v2/entities/calidad04?option=keyvalues",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1026",
+							"path": [
+								"v2",
+								"entities",
+								"calidad04"
+							],
+							"query": [
+								{
+									"key": "option",
+									"value": "keyvalues"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request Calidad05",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "fiware-service",
+								"value": "smartcity",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:1026/v2/entities/calidad05?option=keyvalues",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1026",
+							"path": [
+								"v2",
+								"entities",
+								"calidad05"
+							],
+							"query": [
+								{
+									"key": "option",
+									"value": "keyvalues"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get_KeyVal_Entidades",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "firware-service",
+								"value": "smartcity",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:1026/v2/entities/calidad01?option=keyvalues",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1026",
+							"path": [
+								"v2",
+								"entities",
+								"calidad01"
+							],
+							"query": [
+								{
+									"key": "option",
+									"value": "keyvalues"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modif_Entidades",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "firware-service",
+								"value": "smartcity",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"NO2\":{\"type\":\"Float\", \"value\":\"1\"}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1026/v2/entities/calidad01/attrs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1026",
+							"path": [
+								"v2",
+								"entities",
+								"calidad01",
+								"attrs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar precio calidad02",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "fiware-service",
+								"value": "smartcity",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"NO2\":{\"value\": 90}\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1026/v2/entities/calidad02/attrs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1026",
+							"path": [
+								"v2",
+								"entities",
+								"calidad02",
+								"attrs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualización batch",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Suscription_Orion",
+			"item": [
+				{
+					"name": "Subscripción_Orion",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "fiware-service",
+								"value": "smartcity",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:1026/v2/subscriptions/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1026",
+							"path": [
+								"v2",
+								"subscriptions",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear suscripcion Cygnus a MongoDB",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "fiware-service",
+								"value": "smartcity",
+								"type": "text"
+							},
+							{
+								"key": "fiware-servicepath",
+								"value": "/",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"description\": \"Notify Cygnus Mongo-DB of all context changes\",\r\n  \"subject\": {\r\n    \"entities\": [\r\n      {\r\n        \"idPattern\": \".*\"\r\n      }\r\n    ]\r\n  },\r\n  \"notification\": {\r\n    \"http\": {\r\n      \"url\": \"http://cygnus:5051/notify\"\r\n    }\r\n  },\r\n  \"throttling\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1026/v2/subscriptions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1026",
+							"path": [
+								"v2",
+								"subscriptions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear suscripcion Postgress a MongoDB",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "fiware-service",
+								"value": "smartcity",
+								"type": "text"
+							},
+							{
+								"key": "fiware-servicepath",
+								"value": "/",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"description\": \"Notify Cygnus PostGreSQL of all context changes\",\r\n  \"subject\": {\r\n    \"entities\": [\r\n      {\r\n        \"idPattern\": \".*\"\r\n      }\r\n    ]\r\n  },\r\n  \"notification\": {\r\n    \"http\": {\r\n      \"url\": \"http://cygnus-sql:5055/notify\"\r\n    }\r\n  },\r\n  \"throttling\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1026/v2/subscriptions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1026",
+							"path": [
+								"v2",
+								"subscriptions"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Agent_IoTsmartcity",
+			"item": [
+				{
+					"name": "Residuos",
+					"item": [
+						{
+							"name": "Registrar sensores grupos Residuos",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "fiware-service",
+										"value": "smartcity",
+										"type": "text"
+									},
+									{
+										"key": "fiware-servicepath",
+										"value": "/",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n \"services\": [\n   {\n     \"apikey\":      \"4jggokgpepnvsb2uv4s40d5911\",\n     \"cbroker\":     \"http://orion:1026\",\n     \"entity_type\": \"Residuos\",\n     \"resource\":    \"/iot/d\"\n   }\n ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4041/iot/services",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4041",
+									"path": [
+										"iot",
+										"services"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Registrar sensor residuos_01",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "fiware-service",
+										"type": "text",
+										"value": "smartcity"
+									},
+									{
+										"key": "fiware-servicepath",
+										"type": "text",
+										"value": "/"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"devices\": [\r\n\t{\r\n      \"device_id\": \"residuos01\",\r\n      \"entity_name\": \"residuos01\",\r\n      \"entity_type\": \"Residuos\",\r\n      \"protocol\": \"PDI-IoTA-UltraLight\",\r\n      \"transport\": \"HTTP\",\r\n       \"attributes\": [\r\n        {\"object_id\": \"n\", \"name\": \"name\", \"type\":\"Text\"},\r\n\t\t{\"object_id\": \"l\", \"name\": \"llenado\", \"type\":\"Float\"},\r\n\t\t{\"object_id\": \"b\", \"name\": \"bateria\", \"type\":\"Float\"},\r\n        {\"object_id\": \"t\", \"name\": \"temperatura\", \"type\":\"Float\"},\r\n        {\"object_id\": \"z\", \"name\": \"zona\", \"type\":\"Text\"}\r\n       ]\r\n    }\r\n  ]\r\n}\r\n"
+								},
+								"url": {
+									"raw": "http://localhost:4041/iot/devices",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4041",
+									"path": [
+										"iot",
+										"devices"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Registrar sensor residuos_02",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "fiware-service",
+										"type": "text",
+										"value": "smartcity"
+									},
+									{
+										"key": "fiware-servicepath",
+										"type": "text",
+										"value": "/"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"devices\": [\r\n\t{\r\n      \"device_id\": \"residuos02\",\r\n      \"entity_name\": \"residuos02\",\r\n      \"entity_type\": \"Residuos\",\r\n      \"protocol\": \"PDI-IoTA-UltraLight\",\r\n      \"transport\": \"HTTP\",\r\n       \"attributes\": [\r\n        {\"object_id\": \"n\", \"name\": \"name\", \"type\":\"Text\"},\r\n\t\t{\"object_id\": \"l\", \"name\": \"llenado\", \"type\":\"Float\"},\r\n\t\t{\"object_id\": \"b\", \"name\": \"bateria\", \"type\":\"Float\"},\r\n        {\"object_id\": \"t\", \"name\": \"temperatura\", \"type\":\"Float\"},\r\n        {\"object_id\": \"z\", \"name\": \"zona\", \"type\":\"Text\"}\r\n       ]\r\n    }\r\n  ]\r\n}\r\n"
+								},
+								"url": {
+									"raw": "http://localhost:4041/iot/devices",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4041",
+									"path": [
+										"iot",
+										"devices"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Registrar sensor residuos_03",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "fiware-service",
+										"type": "text",
+										"value": "smartcity"
+									},
+									{
+										"key": "fiware-servicepath",
+										"type": "text",
+										"value": "/"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"devices\": [\r\n\t{\r\n      \"device_id\": \"residuos03\",\r\n      \"entity_name\": \"residuos03\",\r\n      \"entity_type\": \"Residuos\",\r\n      \"protocol\": \"PDI-IoTA-UltraLight\",\r\n      \"transport\": \"HTTP\",\r\n       \"attributes\": [\r\n        {\"object_id\": \"n\", \"name\": \"name\", \"type\":\"Text\"},\r\n\t\t{\"object_id\": \"l\", \"name\": \"llenado\", \"type\":\"Float\"},\r\n\t\t{\"object_id\": \"b\", \"name\": \"bateria\", \"type\":\"Float\"},\r\n        {\"object_id\": \"t\", \"name\": \"temperatura\", \"type\":\"Float\"},\r\n        {\"object_id\": \"z\", \"name\": \"zona\", \"type\":\"Text\"}\r\n       ]\r\n    }\r\n  ]\r\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4041/iot/devices",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4041",
+									"path": [
+										"iot",
+										"devices"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Registrar sensor residuos_04",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "fiware-service",
+										"type": "text",
+										"value": "smartcity"
+									},
+									{
+										"key": "fiware-servicepath",
+										"type": "text",
+										"value": "/"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"devices\": [\r\n\t{\r\n      \"device_id\": \"residuos04\",\r\n      \"entity_name\": \"residuos04\",\r\n      \"entity_type\": \"Residuos\",\r\n      \"protocol\": \"PDI-IoTA-UltraLight\",\r\n      \"transport\": \"HTTP\",\r\n       \"attributes\": [\r\n        {\"object_id\": \"n\", \"name\": \"name\", \"type\":\"Text\"},\r\n\t\t{\"object_id\": \"l\", \"name\": \"llenado\", \"type\":\"Float\"},\r\n\t\t{\"object_id\": \"b\", \"name\": \"bateria\", \"type\":\"Float\"},\r\n        {\"object_id\": \"t\", \"name\": \"temperatura\", \"type\":\"Float\"},\r\n        {\"object_id\": \"z\", \"name\": \"zona\", \"type\":\"Text\"}\r\n       ]\r\n    }\r\n  ]\r\n}\r\n"
+								},
+								"url": {
+									"raw": "http://localhost:4041/iot/devices",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4041",
+									"path": [
+										"iot",
+										"devices"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Registrar sensor residuos_05",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "fiware-service",
+										"type": "text",
+										"value": "smartcity"
+									},
+									{
+										"key": "fiware-servicepath",
+										"type": "text",
+										"value": "/"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"devices\": [\r\n\t{\r\n      \"device_id\": \"residuos05\",\r\n      \"entity_name\": \"residuos05\",\r\n      \"entity_type\": \"Residuos\",\r\n      \"protocol\": \"PDI-IoTA-UltraLight\",\r\n      \"transport\": \"HTTP\",\r\n       \"attributes\": [\r\n        {\"object_id\": \"n\", \"name\": \"name\", \"type\":\"Text\"},\r\n\t\t{\"object_id\": \"l\", \"name\": \"llenado\", \"type\":\"Float\"},\r\n\t\t{\"object_id\": \"b\", \"name\": \"bateria\", \"type\":\"Float\"},\r\n        {\"object_id\": \"t\", \"name\": \"temperatura\", \"type\":\"Float\"},\r\n        {\"object_id\": \"z\", \"name\": \"zona\", \"type\":\"Text\"}\r\n       ]\r\n    }\r\n  ]\r\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4041/iot/devices",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4041",
+									"path": [
+										"iot",
+										"devices"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Actualizar dispositivo residuos1 Ultralight",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "fiware-service",
+										"type": "text",
+										"value": "smartcity"
+									},
+									{
+										"key": "fiware-servicepath",
+										"type": "text",
+										"value": "/"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "l|25"
+								},
+								"url": {
+									"raw": "http://localhost:7896/iot/d?i=residuos01&k=4jggokgpepnvsb2uv4s40d5911",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7896",
+									"path": [
+										"iot",
+										"d"
+									],
+									"query": [
+										{
+											"key": "i",
+											"value": "residuos01"
+										},
+										{
+											"key": "k",
+											"value": "4jggokgpepnvsb2uv4s40d5911"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Aire",
+					"item": [
+						{
+							"name": "Registrar sensor calidad_01",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "fiware-service",
+										"value": "smartcity",
+										"type": "text"
+									},
+									{
+										"key": "fiware-servicepath",
+										"value": "/",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\"devices\": [\n\t{\n      \"device_id\": \"calidad01\",\n      \"entity_name\": \"calidad01\",\n      \"entity_type\": \"Calidad_Aire\",\n      \"protocol\": \"PDI-IoTA-UltraLight\",\n      \"transport\": \"HTTP\",\n       \"attributes\": [\n        {\"object_id\": \"no2\", \"name\": \"NO2\", \"type\":\"Float\"},\n\t\t{\"object_id\": \"so3\", \"name\": \"SO3\", \"type\":\"Float\"},\n\t\t{\"object_id\": \"co\", \"name\": \"CO\", \"type\":\"Float\"},\n        {\"object_id\": \"o3\", \"name\": \"O3\", \"type\":\"Float\"},\n        {\"object_id\": \"h2s\", \"name\": \"H2S\", \"type\":\"Float\"},\n        {\"object_id\": \"db\", \"name\": \"DB\", \"type\":\"Float\"}\n       ]\n    }\n  ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4041/iot/devices",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4041",
+									"path": [
+										"iot",
+										"devices"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Registrar sensor calidad_01",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "fiware-service",
+										"value": "smartcity",
+										"type": "text"
+									},
+									{
+										"key": "fiware-servicepath",
+										"value": "/",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\"devices\": [\n\t{\n      \"device_id\": \"calidad02\",\n      \"entity_name\": \"calidad02\",\n      \"entity_type\": \"Calidad_Aire\",\n      \"protocol\": \"PDI-IoTA-UltraLight\",\n      \"transport\": \"HTTP\",\n       \"attributes\": [\n        {\"object_id\": \"no2\", \"name\": \"NO2\", \"type\":\"Float\"},\n\t\t{\"object_id\": \"so3\", \"name\": \"SO3\", \"type\":\"Float\"},\n\t\t{\"object_id\": \"co\", \"name\": \"CO\", \"type\":\"Float\"},\n        {\"object_id\": \"o3\", \"name\": \"O3\", \"type\":\"Float\"},\n        {\"object_id\": \"h2s\", \"name\": \"H2S\", \"type\":\"Float\"},\n        {\"object_id\": \"db\", \"name\": \"DB\", \"type\":\"Float\"}\n       ]\n    }\n  ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4041/iot/devices",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4041",
+									"path": [
+										"iot",
+										"devices"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Registrar sensor calidad_03",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "fiware-service",
+										"value": "smartcity",
+										"type": "text"
+									},
+									{
+										"key": "fiware-servicepath",
+										"value": "/",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\"devices\": [\n\t{\n      \"device_id\": \"calidad03\",\n      \"entity_name\": \"calidad03\",\n      \"entity_type\": \"Calidad_Aire\",\n      \"protocol\": \"PDI-IoTA-UltraLight\",\n      \"transport\": \"HTTP\",\n       \"attributes\": [\n        {\"object_id\": \"no2\", \"name\": \"NO2\", \"type\":\"Float\"},\n\t\t{\"object_id\": \"so3\", \"name\": \"SO3\", \"type\":\"Float\"},\n\t\t{\"object_id\": \"co\", \"name\": \"CO\", \"type\":\"Float\"},\n        {\"object_id\": \"o3\", \"name\": \"O3\", \"type\":\"Float\"},\n        {\"object_id\": \"h2s\", \"name\": \"H2S\", \"type\":\"Float\"},\n        {\"object_id\": \"db\", \"name\": \"DB\", \"type\":\"Float\"}\n       ]\n    }\n  ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4041/iot/devices",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4041",
+									"path": [
+										"iot",
+										"devices"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Registrar sensor calidad_04",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "fiware-service",
+										"value": "smartcity",
+										"type": "text"
+									},
+									{
+										"key": "fiware-servicepath",
+										"value": "/",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\"devices\": [\n\t{\n      \"device_id\": \"calidad04\",\n      \"entity_name\": \"calidad04\",\n      \"entity_type\": \"Calidad_Aire\",\n      \"protocol\": \"PDI-IoTA-UltraLight\",\n      \"transport\": \"HTTP\",\n       \"attributes\": [\n        {\"object_id\": \"no2\", \"name\": \"NO2\", \"type\":\"Float\"},\n\t\t{\"object_id\": \"so3\", \"name\": \"SO3\", \"type\":\"Float\"},\n\t\t{\"object_id\": \"co\", \"name\": \"CO\", \"type\":\"Float\"},\n        {\"object_id\": \"o3\", \"name\": \"O3\", \"type\":\"Float\"},\n        {\"object_id\": \"h2s\", \"name\": \"H2S\", \"type\":\"Float\"},\n        {\"object_id\": \"db\", \"name\": \"DB\", \"type\":\"Float\"}\n       ]\n    }\n  ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4041/iot/devices",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4041",
+									"path": [
+										"iot",
+										"devices"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Registrar sensor calidad_05",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "fiware-service",
+										"value": "smartcity",
+										"type": "text"
+									},
+									{
+										"key": "fiware-servicepath",
+										"value": "/",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\"devices\": [\n\t{\n      \"device_id\": \"calidad05\",\n      \"entity_name\": \"calidad05\",\n      \"entity_type\": \"Calidad_Aire\",\n      \"protocol\": \"PDI-IoTA-UltraLight\",\n      \"transport\": \"HTTP\",\n       \"attributes\": [\n        {\"object_id\": \"no2\", \"name\": \"NO2\", \"type\":\"Float\"},\n\t\t{\"object_id\": \"so3\", \"name\": \"SO3\", \"type\":\"Float\"},\n\t\t{\"object_id\": \"co\", \"name\": \"CO\", \"type\":\"Float\"},\n        {\"object_id\": \"o3\", \"name\": \"O3\", \"type\":\"Float\"},\n        {\"object_id\": \"h2s\", \"name\": \"H2S\", \"type\":\"Float\"},\n        {\"object_id\": \"db\", \"name\": \"DB\", \"type\":\"Float\"}\n       ]\n    }\n  ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4041/iot/devices",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4041",
+									"path": [
+										"iot",
+										"devices"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Actualizar dispositivo calidad01 Ultralight",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "fiware-service",
+										"type": "text",
+										"value": "smartcity"
+									},
+									{
+										"key": "fiware-servicepath",
+										"type": "text",
+										"value": "/"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "no2|12.5"
+								},
+								"url": {
+									"raw": "http://localhost:7896/iot/d?i=calidad01&k=4jggokgpepnvsb2uv4s40d5911",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7896",
+									"path": [
+										"iot",
+										"d"
+									],
+									"query": [
+										{
+											"key": "i",
+											"value": "calidad01"
+										},
+										{
+											"key": "k",
+											"value": "4jggokgpepnvsb2uv4s40d5911"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
